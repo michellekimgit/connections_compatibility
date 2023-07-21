@@ -32,4 +32,9 @@ For example, you will find output as below.
   |       "idVendor" = 8457
 ```
 
-4. Now, you will be able to identify which "idProduct" and "idVender" is referring to the specific joysticks. 
+4. Now, you will be able to identify which "idProduct" and "idVender" is referring to the specific joysticks.
+5. On your virtual environment for python code, install hid library.
+```
+pip install hidapi
+
+```
