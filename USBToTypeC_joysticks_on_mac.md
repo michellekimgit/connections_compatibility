@@ -8,6 +8,7 @@ When modifying mac code to recognize usb devices, follow the steps below.
 % ioreg -p IOUSB -c IOUSBDevice -l | grep -e '"idVendor" =' -e '"idProduct" ='
 ```
 For example, you will find output as below. 
+```
   | | |   "idProduct" = 10263
   | | |   "idVendor" = 8457
   | | |     "idProduct" = 49685
@@ -16,9 +17,11 @@ For example, you will find output as below.
   | |       "idVendor" = 1103
   |       "idProduct" = 2071
   |       "idVendor" = 8457
+```
 
 2. Then, run on mac terminal with usb joysticks connected to type c converter.
 For example, you will find output as below.
+```
   | | |   "idProduct" = 10263
   | | |   "idVendor" = 8457
   | | |     "idProduct" = 45322
@@ -27,5 +30,6 @@ For example, you will find output as below.
   | |       "idVendor" = 1133
   |       "idProduct" = 2071
   |       "idVendor" = 8457
+```
 
-3. Now, you will be able to identify which "idProduct" and "idVender" is referring to the specific joysticks. 
+4. Now, you will be able to identify which "idProduct" and "idVender" is referring to the specific joysticks. 
